@@ -25,8 +25,8 @@ divisione() {
 }
 
 # Input dei numeri
-read -p "Inserisci il primo numero: " num1
-read -p "Inserisci il secondo numero: " num2
+read -p "Inserisci il primo numero cambiato: " num1
+read -p "Inserisci il secondo numero cambiatogit : " num2
 
 # Menu delle operazioni
 echo "Scegli l'operazione:"
