@@ -1,0 +1,25 @@
+pipeline {
+    agent any // Esegue la pipeline su qualsiasi agente disponibile
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'mvn clean package' // Esegue il build con Maven
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'mvn test' // Esegue i test con Maven
+                junit '**/surefire-reports/TEST-*.xml' // Pubblica i risultati dei test JUnit
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                // Esempio di deploy su un server Tomcat
+                sh 'cp target/hello-world-1.0-SNAPSHOT.war /opt/tomcat/webapps/'
+            }
+        }
+    }
+}
