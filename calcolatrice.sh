@@ -12,7 +12,7 @@ sottrazione() {
 
 # Funzione per la moltiplicazione
 moltiplicazione() {
-  echo "Il prodotto è: $(bc <<< "$1 * $2")"
+  echo "Il prodotto g è: $(bc <<< "$1 * $2")"
 }
 
 # Funzione per la divisione
