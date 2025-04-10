@@ -7,7 +7,7 @@ somma() {
 
 # Funzione per la sottrazione
 sottrazione() {
-  echo "La differenza è: $(bc <<< "$1 - $2")"
+  echo "La differenza dsè: $(bc <<< "$1 - $2")"
 }
 
 # Funzione per la moltiplicazione
